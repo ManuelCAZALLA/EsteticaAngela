@@ -24,9 +24,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3CFA85782CF32E2400D88451 /* EstéticaÁngela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "EstéticaÁngela.app"; path = "/Users/manuelcazallacolmenero/Desktop/EsteticaAngela/build/Debug-iphoneos/EstéticaÁngela.app"; sourceTree = "<absolute>"; };
-		3CFA858A2CF32E2600D88451 /* EstéticaÁngelaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "EstéticaÁngelaTests.xctest"; path = "/Users/manuelcazallacolmenero/Desktop/EsteticaAngela/build/Debug-iphoneos/EstéticaÁngela.app/PlugIns/EstéticaÁngelaTests.xctest"; sourceTree = "<absolute>"; };
-		3CFA85942CF32E2600D88451 /* EstéticaÁngelaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "EstéticaÁngelaUITests.xctest"; path = "/Users/manuelcazallacolmenero/Desktop/EsteticaAngela/build/Debug-iphoneos/EstéticaÁngelaUITests-Runner.app/PlugIns/EstéticaÁngelaUITests.xctest"; sourceTree = "<absolute>"; };
+		3C4A745B2CFCE18700C68BBE /* EstéticaÁngela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EstéticaÁngela.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4A745C2CFCE18700C68BBE /* EstéticaÁngelaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EstéticaÁngelaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4A745D2CFCE18700C68BBE /* EstéticaÁngelaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EstéticaÁngelaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4A74702CFCE20100C68BBE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3C4A74732CFCE27700C68BBE /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -72,6 +74,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C4A74742CFCE28F00C68BBE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3C4A74752CFCE29F00C68BBE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3C4A74732CFCE27700C68BBE /* BaseNetwork.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		3C6E01522CF510DB0028EC0A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +115,8 @@
 		3C6E01552CF511040028EC0A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3C4A74752CFCE29F00C68BBE /* Service */,
+				3C4A74742CFCE28F00C68BBE /* CoreData */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -105,6 +124,7 @@
 		3C6E01562CF5110B0028EC0A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3C4A74702CFCE20100C68BBE /* Model.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -118,6 +138,9 @@
 				3C6E01522CF510DB0028EC0A /* Presentation */,
 				3C6E01562CF5110B0028EC0A /* Domain */,
 				3C6E01552CF511040028EC0A /* Data */,
+				3C4A745B2CFCE18700C68BBE /* EstéticaÁngela.app */,
+				3C4A745C2CFCE18700C68BBE /* EstéticaÁngelaTests.xctest */,
+				3C4A745D2CFCE18700C68BBE /* EstéticaÁngelaUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,7 +166,7 @@
 			packageProductDependencies = (
 			);
 			productName = "EstéticaÁngela";
-			productReference = 3CFA85782CF32E2400D88451 /* EstéticaÁngela.app */;
+			productReference = 3C4A745B2CFCE18700C68BBE /* EstéticaÁngela.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3CFA85892CF32E2600D88451 /* EstéticaÁngelaTests */ = {
@@ -166,7 +189,7 @@
 			packageProductDependencies = (
 			);
 			productName = "EstéticaÁngelaTests";
-			productReference = 3CFA858A2CF32E2600D88451 /* EstéticaÁngelaTests.xctest */;
+			productReference = 3C4A745C2CFCE18700C68BBE /* EstéticaÁngelaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3CFA85932CF32E2600D88451 /* EstéticaÁngelaUITests */ = {
@@ -189,7 +212,7 @@
 			packageProductDependencies = (
 			);
 			productName = "EstéticaÁngelaUITests";
-			productReference = 3CFA85942CF32E2600D88451 /* EstéticaÁngelaUITests.xctest */;
+			productReference = 3C4A745D2CFCE18700C68BBE /* EstéticaÁngelaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
